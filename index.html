@@ -28,10 +28,26 @@
                         </tr>
                     </thead>
                     <tbody id="employees-tbody">
-                        <!-- Les employés seront insérés ici dynamiquement -->
                     </tbody>
                 </table>
             </div>
+            <form id="employee-form">
+                <div id="form-fields">
+                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Nom" required>
+                    <input type="number" name="age" id="age" placeholder="Âge" min="18" max="65">
+                    <select name="department" id="department">
+                        <option value="">Choisir un département</option>
+                        <option value="Développement">Développement</option>
+                        <option value="Design">Design</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Management">Management</option>
+                    </select>
+                </div>
+                <button type="button" id="add-skill-btn">+ Compétence</button>
+                <div id="skills-container"></div>
+                <button type="submit" id="addEmployee">Ajouter l'employé</button>
+            </form>
         </section>
     </main>
     <script type="module" src="script.js"></script>
